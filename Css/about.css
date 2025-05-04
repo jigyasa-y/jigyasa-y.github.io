@@ -74,18 +74,26 @@ animation-delay: 10s;
 .about{
     /* border:1px solid black; */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    width:100%;
     margin-top: 2rem;
+    /* height:100vh; */
 
 
 }
 .self_intro{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+padding-bottom:1rem;
 width:40vw;
 /* height: 40rem; */
 /* border:1px solid rgb(205, 166, 166); */
 margin-right:10%;
+margin-left: 10%;
 border-radius:10px;
-box-shadow: 0 4px 10px black;
+/* box-shadow: 0 4px 10px black; */
 background-color: rgb(94, 71, 71);
 animation : animate_intro 1.5s linear 1;
 
@@ -129,7 +137,7 @@ animation : animate_intro 1.5s linear 1;
     height:25rem;
     width:20rem;
     margin-left: 5rem;
-    margin-top:5rem;
+    margin-top:2rem;
         background-image:url('../images/jigyasa_about.jpg');
     background-position: center;
     background-size: cover;
@@ -143,8 +151,10 @@ animation : animate_intro 1.5s linear 1;
     position: relative;
     /* width:20rem; */
     margin:1rem;
-    font-size: 40px;
+    font-size: 35px;
     font-family: monospace;
+    color:rgb(0, 0, 0);
+    text-decoration: underline;
 }
 #interests{
     display: flex;
@@ -173,7 +183,7 @@ animation : animate_intro 1.5s linear 1;
     display: flex;
     flex-wrap:wrap;
     margin:2rem 1rem 0rem 1rem;
-    font-size:25px;
+    font-size:16px;
     color:rgb(230, 220, 220);
 
     word-spacing: 3px;
@@ -203,7 +213,7 @@ animation : animate_intro 1.5s linear 1;
     margin:10px;
     justify-content: space-between;
     list-style-type:none;
-    font-size:30px;
+    font-size:20px;
     font-weight: 500;
     margin-right: 5rem;
     height:100%;
@@ -244,7 +254,7 @@ animation : animate_intro 1.5s linear 1;
 }
 
 #name{
-    font-size:40px;
+    font-size:30px;
     /* color:rgb(204, 98, 221); */
     color:rgb(236, 27, 27);
     position: relative;
@@ -260,7 +270,7 @@ animation : animate_intro 1.5s linear 1;
 #suffix{
     color:rgb(255, 255, 255);
     position:relative;
-    font-size:40px;
+    font-size:30px;
     margin-top:10px;
     font-family: "Playwrite AU SA", cursive;
 
