@@ -153,7 +153,7 @@ animation : animate_intro 1.5s linear 1;
     margin:1rem;
     font-size: 35px;
     font-family: monospace;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     text-decoration: underline;
 }
 #interests{
