@@ -74,7 +74,7 @@ body{
     margin:10px;
     justify-content: space-between;
     list-style-type:none;
-    font-size:30px;
+    font-size:20px;
     font-weight: 500;
     margin-right: 5rem;
     height:100%;
@@ -109,7 +109,7 @@ body{
     width:100%;
 }
 #name{
-    font-size:40px;
+    font-size:30px;
     color:rgb(236, 27, 27);
     position: relative;
     font-family: "Playwrite AU SA", cursive;
@@ -125,7 +125,7 @@ body{
 #suffix{
     color:rgb(255, 253, 253);
     position:relative;
-    font-size:40px;
+    font-size:30px;
     margin-top:10px;
     font-family: "Playwrite AU SA", cursive;
 
@@ -179,13 +179,14 @@ body{
     margin-top: 5px;
     /* color:rgb(4, 4, 4); */
     color:rgb(0, 0, 0);
+    font-size:13px;
 
 
 }
 
 .desing_skills img{
-    height:4rem;
-    width:4rem;
+    height:2rem;
+    width:2rem;
     padding: 8px;
     /* background-color: red; */
     border:8px solid rgb(121, 121, 159);
@@ -204,8 +205,8 @@ body{
 
 .web_design,.web_development,.android_app_design,.system_design{
     /* border:1px solid black; */
-    height: 18rem;
-    width:25rem;
+    /* height: 13rem; */
+    width:20rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
