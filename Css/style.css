@@ -346,7 +346,8 @@ transform:scale(1);
     color:bisque;
    /* border: 1px solid white; */
 
-    font-family:cursive;
+
+    font-family: 'Press Start 2P', cursive;
 
     word-spacing: 10px;
   animation :animate_aboutMe 4s 1;
@@ -543,7 +544,8 @@ margin-left:15px;
     top:20%;
     font-size: 15px;
     color:bisque;
-    font-family:cursive;
+
+    font-family: 'Press Start 2P', cursive;
     word-spacing: 10px;
     animation :animate_aboutMe 4s 1;
     font-weight: 800;
