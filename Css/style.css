@@ -545,10 +545,10 @@ margin-left:15px;
     font-size: 15px;
     color:bisque;
 
-    font-family:monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     word-spacing: 10px;
     animation :animate_aboutMe 4s 1;
-    font-weight: 600;
+    font-weight: lighter;
 }
 #profession{
     font-size: 30px;
