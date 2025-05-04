@@ -68,7 +68,7 @@ body::-webkit-scrollbar-track {
     margin:10px;
     justify-content: space-between;
     list-style-type:none;
-    font-size:30px;
+    font-size:20px;
     font-weight: 500;
     margin-right: 5rem;
     margin-top: 2rem;
@@ -109,7 +109,7 @@ body::-webkit-scrollbar-track {
     }
 }
 #name{
-    font-size:40px;
+    font-size:30px;
     color:rgb(236, 27, 27);
     position: relative;
     font-family: "Playwrite AU SA", cursive;
@@ -125,7 +125,7 @@ body::-webkit-scrollbar-track {
 #suffix{
     color:white;
     position:relative;
-    font-size:40px;
+    font-size:30px;
     margin-top:10px;
     font-family: "Playwrite AU SA", cursive;
 
@@ -160,12 +160,12 @@ body::-webkit-scrollbar-track {
 
 }
 .image_section{
-    width:23rem;
-    height:23rem;
+    width:18rem;
+    height:18rem;
     /* border:5px solid black; */
     border-radius:50%;
     margin-left:5rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     box-shadow:0px 0px 20px rgb(51, 51, 51);
 background:url('../images/jigyasa.jpg'); 
     background-position: center;
@@ -206,8 +206,8 @@ display: flex;
 flex-direction: column;
     transition: ease-in 0.3;
      width:50vw;
-    margin-top:5%;
-    margin-right:5%;
+    margin-top:-3%;
+    margin-right:10%;
 
     padding-left:2rem;
 
@@ -286,7 +286,7 @@ transform:scale(1);
 
 
 #user_name,#greet{
-    font-size:36px;
+    font-size:32px;
     font-weight: bolder;
     position:relative;
     animation:animate_Greet 2s 1;
@@ -326,7 +326,7 @@ transform:scale(1);
 
 }
 #profession{
-    font-size:40px;
+    font-size:30px;
     font-weight:bolder;
     position:relative;
     animation:animate_profession 2s;
@@ -342,7 +342,7 @@ transform:scale(1);
     position:relative;
     text-wrap: wrap;
     top:20%;
-    font-size: 20px;
+    font-size: 14px;
     color:bisque;
    /* border: 1px solid white; */
 
