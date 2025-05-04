@@ -545,10 +545,10 @@ margin-left:15px;
     font-size: 15px;
     color:bisque;
 
-    font-family: 'Press Start 2P', cursive;
+    font-family:monospace;
     word-spacing: 10px;
     animation :animate_aboutMe 4s 1;
-    font-weight: 800;
+    font-weight: 600;
 }
 #profession{
     font-size: 30px;
