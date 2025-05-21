@@ -1,6 +1,6 @@
 
 const projects={
-    item:[{img:"../images/pr1.jpeg", about:"First projects",link:''}
+    item:[{img:"../images/pr1.jpeg", about:"First projects",link:'mdsahil-a.github.io/temp'}
       ,
       {
         img:"../images/pr2.jpeg",about:"second project",link:''
