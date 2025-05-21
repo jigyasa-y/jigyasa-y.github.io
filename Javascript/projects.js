@@ -57,7 +57,7 @@ function createSection(user){
   const detailsDiv=document.createElement('div');
   detailsDiv.id='project_details';
   const anch =document.createElement('a');
-  anch.href="google.com";
+  anch.href="https://google.com";
   anch.textContent='Visit'; 
   const h1=document.createElement('h1');
   h1.id='project_name';
