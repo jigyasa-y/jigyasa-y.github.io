@@ -61,7 +61,7 @@ function createSection(user){
   anch.textContent='Visit'; 
   const h1=document.createElement('h1');
   h1.id='project_name';
-   h1.textContent=`Project name
+   h1.textContent=`${user.about}
    `;
    detailsDiv.appendChild(h1);
    detailsDiv.appendChild(anch);
