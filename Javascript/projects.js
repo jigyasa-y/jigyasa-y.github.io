@@ -1,6 +1,6 @@
 
 const projects={
-    item:[{img:"../images/WeatherApp.jpg", about:"Weather App",link:'https://mdsahil-a.github.io/temp'}
+    item:[{img:"../images/pr1.jpeg", about:"First project",link:''}
       ,
       {
         img:"../images/pr2.jpeg",about:"second project",link:''
