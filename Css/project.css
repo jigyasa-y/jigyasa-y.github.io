@@ -272,6 +272,10 @@ border-radius: 5px;
 } */
 
 @media (max-width:600px){
+  .web_apps{
+    width:100%;
+  }
+  
     .projects_heading{
         margin-top: 0rem;
     }
