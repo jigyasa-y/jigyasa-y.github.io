@@ -1,5 +1,5 @@
 const jigyasa={
-  image:'../images/jigyasa.jpg',
+  image:'../images/jigyasapic.png',
   suffix_title:'Jigyasa',
   name_title:'Yadav',
   name:'Jigyasa'
