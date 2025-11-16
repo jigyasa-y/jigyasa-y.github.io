@@ -389,3 +389,86 @@ border-radius: 5px;
         display: none;
     }
 }
+#imageCountainer{
+    height: 13rem;
+    width: 100%;
+   
+        background-position: center;
+    background-size: cover;
+    border-radius:5px ;
+}
+#projectImage{
+  width: 100%;
+  height: 100%;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    /* object-fit: cover; */
+}
+
+
+.my_projects{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px;
+gap:2rem;
+box-shadow: 0 0 5px black;
+background-color: rgba(53, 38, 62, 0.87);
+    width: 20rem;
+
+}
+
+.about_project{
+/* background-color: #121413; */
+
+ display: flex;
+ flex-direction:column;
+ align-items: start;
+ border-radius: 10px;
+ gap:2rem;
+
+}
+#project_details{
+    color:rgba(230, 211, 211, 0.451);
+    text-align: start;
+}
+.about_project h1{
+    color:antiquewhite;
+    font-size: 18px;
+
+}
+
+#viewButton{
+    background-color: brown;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:skyblue;
+    text-decoration: none;
+}
+
+#viewButton:hover{
+    color: black;
+    transition: 0.2s ease-in;
+    background-color: white;
+}
+
+.about_project span{
+    color: rgb(255, 255, 255);
+    background-color: #273944;
+    padding: 5px;
+    border-radius:5px;
+    box-shadow: 5px 0 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.tech-used{
+
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}

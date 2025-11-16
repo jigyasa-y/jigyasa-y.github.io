@@ -1,12 +1,12 @@
 
 const projects={
-    item:[{img:"../images/JoySync.png", about:"Social media Plaform(JoySync)",link:'https://jigyasa-y.github.io/socialmedia-platform/'}
+    item:[{img:"../images/JoySync.png",name:"Social media Plaform(JoySync)", about:"A social media platform with authentication and good UI/UX",link:'https://jigyasa-y.github.io/socialmedia-platform/',tech:["HTML5","CSS3","javaScript","MONGODB","NodeJs","ExpressJS","Cloudinary"]}
       ,
       {
-        img:"../images/Flow-Chat.png",about:"Real-time chat app(Flow-Talk)",link:'https://jigyasa-y.github.io/chat-app/src/pages/chatPage.html'
+        img:"../images/Flow-Chat.png",name:"Real-time Chat app(Flow Talk)",about:"A simple messaging app made of HTML5,CSS3,NODE.js,Express.js and MONGODB",link:'https://jigyasa-y.github.io/chat-app/src/pages/chatPage.html',tech:["HTML5","CSS3","javaScript","MONGODB","NodeJs","ExpressJS","Cloudinary"]
       } ,
       {
-        img:"../images/clinicWebsite.png",about:"Clinic Website",link:'https://jigyasa-y.github.io/clinic-website/'
+        img:"../images/clinicWebsite.png",name:"Clinic website",about:"An static hospital management system and clinic website",link:'https://jigyasa-y.github.io/clinic-website/',tech:["HTML5","CSS3","javaScript"]
       }
     ]
       
@@ -23,40 +23,43 @@ const projects={
     
     });
     
+const wrapper = document.querySelector(".wrapper");
+
+projects.item.forEach(user => {
+
+    // 1. Insert project card
+    wrapper.innerHTML += `
+        <div class="my_projects">
+            <div id="imageCountainer">
+                <img src="${user.img}" id="projectImage" alt="">
+            </div>
+
+            <div class="about_project">
+                <h1>${user.name}</h1>
+                <p id="project_details">${user.about}</p>
+
+                <div class="tech-used"></div>
+            </div>
+
+            <a href="${user.link}" id="viewButton">View project</a>
+        </div>`;
+});
 
 
-function createSection(user){
+// 2. Now add tech tags to each project card
+const projectCards = document.querySelectorAll(".my_projects");
 
-    const image=new Image();
-    image.src=`${user.img}`;
-    image.id='project_image';
-  
-    const project=document.createElement('div');
-    project.className='web_apps';
-  const detailsDiv=document.createElement('div');
-  detailsDiv.id='project_details';
-  const anch =document.createElement('a');
-  anch.href=`${user.link}`;
-  anch.textContent='Visit'; 
-  const h1=document.createElement('h1');
-  h1.id='project_name';
-   h1.textContent=`${user.about}
-   `;
-   detailsDiv.appendChild(h1);
-   detailsDiv.appendChild(anch);
-  project.appendChild(image);
-  project.appendChild(detailsDiv);
+projectCards.forEach((card, index) => {
+    const techContainer = card.querySelector(".tech-used");
 
-  document.querySelector('.wrapper').appendChild(project);
-  console.log(project);
-  console.log(detailsDiv);
-  
-  
-  }
-  
-  for(let i=0;i<projects.item.length;i++){
-    createSection(projects.item[i]);
-  }
+    projects.item[index].tech.forEach(tech => {
+        techContainer.innerHTML += `<span class="tag">${tech}</span>`;
+    });
+});
+
+
+
+
 
  
 const open=document.querySelector('#navList');
