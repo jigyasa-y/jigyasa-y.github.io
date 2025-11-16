@@ -228,7 +228,7 @@ position: relative;
     font-family: "Poppins",sans-serif;
     transition: 0.3s;
     animation: animates_hireMe 1s 1;
-    margin-top:8rem;
+    /* margin-top:8rem; */
 
 }
 
@@ -507,11 +507,13 @@ transform:scale(1);
     display: flex;
     flex-direction: column;
    width: 90%;
+   gap:5rem;
     transition: ease-in 0.3;
 margin-left:15px;
   height: 50vh;
     margin-top:2rem;
     padding-left: 0;
+    /* border:1px solid white; */
 
 }
 
@@ -553,5 +555,43 @@ margin-left:15px;
 #profession{
     font-size: 30px;
 }
+
+}
+#button{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border:1px solid white; */
+   margin-top: 6rem;
+   gap:80px;
+}
+#resumeDownload{
+    border:1px solid white;
+    /* width:12rem; */
+    padding: 10px;
+    background-color: rgb(240, 223, 223);
+    color:black;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+
+    gap:10px;
+}
+#resumeDownload:hover{
+
+cursor:pointer;
+background-color:rgb(149, 136, 136);
+color:rgb(255, 255, 255);
+}
+
+
+.fa-solid{
+    font-size: 25px;
+    color: brown;
 
 }

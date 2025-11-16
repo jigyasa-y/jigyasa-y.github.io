@@ -1,34 +1,13 @@
 
 const projects={
-    item:[{img:"../images/pr1.jpeg", about:"First project",link:''}
+    item:[{img:"../images/JoySync.png", about:"Social media Plaform(JoySync)",link:'https://jigyasa-y.github.io/socialmedia-platform/'}
       ,
       {
-        img:"../images/pr2.jpeg",about:"second project",link:''
+        img:"../images/Flow-Chat.png",about:"Real-time chat app(Flow-Talk)",link:'https://jigyasa-y.github.io/chat-app/src/pages/chatPage.html'
       } ,
       {
-        img:"../images/pr3.jpeg",about:"Three project",link:''
-      } ,
-      {
-        img:"../images/pr4.jpeg",about:"Fourth project",link:''
-      } ,
-      {
-        img:"../images/pr5.jpeg",about:"Fifth project",link:''
-      } ,
-      {
-        img:"../images/pr6.jpeg",about:"Sixth project",link:''
-      },{
-        img:"../images/pr1.jpeg",about:"Seventh project",link:''
+        img:"../images/clinicWebsite.png",about:"Clinic Website",link:'https://jigyasa-y.github.io/clinic-website/'
       }
-      ,
-      {
-        img:"../images/pr2.jpeg",about:"second project",link:''
-      } ,
-      {
-        img:"../images/pr3.jpeg",about:"Three project",link:''
-      } ,
-      {
-        img:"../images/pr4.jpeg",about:"Fourth project",link:''
-      } 
     ]
       
     };
