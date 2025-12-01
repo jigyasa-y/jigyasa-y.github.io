@@ -159,7 +159,7 @@ body::-webkit-scrollbar-track {
   
 
 }
-.image_section{
+.profileImageCountainer{
     width:18rem;
     height:18rem;
     /* border:5px solid black; */
@@ -167,12 +167,19 @@ body::-webkit-scrollbar-track {
     margin-left:5rem;
     margin-top: 1rem;
     box-shadow:0px 0px 20px rgb(51, 51, 51);
-background:url('../images/jigyasapic.png'); 
+
     background-position: center;
     background-size: cover;
     filter:brightness(0.6);
  
 
+}
+
+.image_section{
+    height: 100%;
+    width: 100%;
+    border-radius:50%;
+    object-fit: cover;
 }
 .image_section:hover{
     animation :animate 5s linear 1;
@@ -378,6 +385,13 @@ transform:scale(1);
 
 @media (max-width:600px){
 
+    #button{
+        /* border:1px solid white; */
+        /* gap:20rem; */
+    }
+
+ 
+
     .header{
         height:5rem;
         box-shadow: 0px 4px 10px rgb(83, 75, 75);
@@ -485,21 +499,13 @@ transform:scale(1);
         display: flex;
         flex-direction: column; 
     }
-    .image_section{
-        width:13rem;
-        height:13rem;
-        border:5px solid none;
-        border-radius:50%;
-        margin-left:1rem;
-        margin-top: -2rem;
-        box-shadow:0px 0px 50px rgb(163, 36, 36);
-        /* filter: drop-shadow(200); */
-         background-position: center;
-        background-size: cover;
-     
-    }
+.profileImageCountainer{
+    margin-top: -3.5rem;
+    height: 12rem;
+    width: 12rem;
+}
     #hire_me{
-        left:60%;
+        /* left:60%; */
         width:8rem;
     }
 .about_section{
@@ -507,7 +513,7 @@ transform:scale(1);
     display: flex;
     flex-direction: column;
    width: 90%;
-   gap:5rem;
+   /* gap:5rem; */
     transition: ease-in 0.3;
 margin-left:15px;
   height: 50vh;

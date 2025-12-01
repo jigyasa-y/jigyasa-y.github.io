@@ -46,7 +46,7 @@ I'm passionate about solving problems through code and
  projects and exploring new tools and frameworks.`
 
 
-const texts = ["Android Developer ", "Web Developer ", "Creative Coder "];
+const texts = ["Android Developer ", "Web Developer ", "Creative Coder ","Mern Stack developer "];
     const typingSpeed = 50;
     const deletingSpeed = 60;
     const delayBetween = 1000;
