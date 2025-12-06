@@ -9,7 +9,7 @@ window.addEventListener('load', async function () {
     const preloader = document.getElementById('preloader');
     preloader.style.display = 'none';
     try{
-const response=await axios.get("http://localhost:5000/api/response/contacts");
+const response=await axios.get("https://admin-server-2.onrender.com/api/response/contacts");
 console.log(response.data.contact);
 fb.href=response.data.contact.facebook;
 gh.href=response.data.contact.github;

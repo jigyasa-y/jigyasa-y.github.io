@@ -18,7 +18,7 @@ const projects={
       const preloader = document.getElementById('preloader');
       preloader.style.display = 'none';
 try{
-const response=await axios.get("http://localhost:5000/api/response/projects");
+const response=await axios.get("https://admin-server-2.onrender.com/api/response/projects");
 console.log(response.data.project);
 response.data.project.forEach(pr => {
 

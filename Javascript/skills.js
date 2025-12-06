@@ -7,7 +7,7 @@ window.addEventListener('load', async function() {
     
 
 //   try{
-// const response=await axios.get("http://localhost:5000/api/response/skills")
+// const response=await axios.get("https://admin-server-2.onrender.com/api/response/skills")
 // console.log(response.data)
 //   }
 //   catch(error){

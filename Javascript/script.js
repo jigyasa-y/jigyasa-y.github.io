@@ -18,7 +18,7 @@ const image=document.querySelector(".image_section");
 
 
   try{
-const response=await axios.get("http://localhost:5000/api/response/details");
+const response=await axios.get("https://admin-server-2.onrender.com/api/response/details");
 
 const [name1,name2]=response.data.user.name.split(" ");
  user_name.textContent=name1;
