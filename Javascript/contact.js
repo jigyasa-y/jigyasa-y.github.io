@@ -1,7 +1,35 @@
-window.addEventListener('load', function () {
+const fb=document.querySelector("#instagram");
+const gh=document.querySelector("#github");
+const li=document.querySelector("#linked_in");
+const email=document.querySelector("#email");
+
+
+window.addEventListener('load', async function () {
 
     const preloader = document.getElementById('preloader');
     preloader.style.display = 'none';
+    try{
+const response=await axios.get("http://localhost:5000/api/response/contacts");
+console.log(response.data.contact);
+fb.href=response.data.contact.facebook;
+gh.href=response.data.contact.github;
+li.href=response.data.contact.linkedln;
+email.textContent=response.data.contact.mobile;
+email.href=`mailto:${response.data.contact.mobile}`;
+
+
+
+    }
+    catch(error){
+      console.log("error in message",error.message);
+    }
+
+
+
+
+
+
+
  
   
   });

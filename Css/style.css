@@ -572,11 +572,12 @@ margin-left:15px;
    gap:80px;
 }
 #resumeDownload{
-    border:1px solid white;
+    /* border:1px solid white; */
     /* width:12rem; */
     padding: 10px;
-    background-color: rgb(240, 223, 223);
-    color:black;
+    /* background-color: rgb(240, 223, 223); */
+    border: 1px solid rgb(152, 146, 146);
+    color:rgb(193, 190, 190);
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -584,14 +585,14 @@ margin-left:15px;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    border: none;
+    /* border: none; */
 
     gap:10px;
 }
 #resumeDownload:hover{
 
 cursor:pointer;
-background-color:rgb(149, 136, 136);
+background-color:rgb(26, 25, 25);
 color:rgb(255, 255, 255);
 }
 

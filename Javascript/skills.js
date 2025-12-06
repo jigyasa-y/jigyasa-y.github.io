@@ -1,10 +1,18 @@
 
-window.addEventListener('load', function () {
+window.addEventListener('load', async function() {
 
   const preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
 
     
+
+//   try{
+// const response=await axios.get("http://localhost:5000/api/response/skills")
+// console.log(response.data)
+//   }
+//   catch(error){
+//     console.log("error in message",error.message);
+//   }
 
 
 });

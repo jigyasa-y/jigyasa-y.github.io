@@ -1,20 +1,15 @@
-const jigyasa={
-  image:'../images/jigyasapic.png',
-  suffix_title:'Jigyasa',
-  name_title:'Yadav',
-  name:'Jigyasa'
- }
+// const jigyasa={
+//   image:'../images/jigyasapic.png',
+//   suffix_title:'Jigyasa',
+//   name_title:'Yadav',
+//   name:'Jigyasa'
+//  }
+//  let name="Jigyasa";
+const hireMe=document.querySelector("#hire_me");
+const resumeLink=document.querySelector("#resumeDownload");
+const image=document.querySelector(".image_section");
 
-
- const sahil={
-  image:'',
-  suffix_title:'Md',
-  name_title:'Sahil',
-  name:'Sahil'
- }
-
-
- window.addEventListener('load', function () {
+ window.addEventListener('load', async function () {
 
   const preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
@@ -22,12 +17,32 @@ const jigyasa={
     
 
 
+  try{
+const response=await axios.get("http://localhost:5000/api/response/details");
+
+const [name1,name2]=response.data.user.name.split(" ");
+ user_name.textContent=name1;
+ suffix.textContent=name1;
+ tname.textContent=name2;
+
+
+ about_me.textContent=response.data.user.about;
+image.src=response.data.user.image;
+resumeLink.href=response.data.user.resume;
+
+
+ console.log(response.data.user);
+  }
+  catch(error){
+    console.log("error in message",error.message);
+  }
+
 });
 
 
   
 
-let currentUser =jigyasa;
+
 const user_image=document.querySelector('.image_section');
 
 const pr_image=document.querySelector("#pr1_image");
@@ -35,15 +50,12 @@ const pr_details=document.querySelector("#pr1_details");
 const user_name=document.querySelector('#user_name');
 const suffix=document.querySelector("#suffix");
 const tname=document.querySelector('#name');
-tname.textContent=`${currentUser.name_title}`
-suffix.textContent=`${currentUser.suffix_title}`
- user_name.textContent=` ${currentUser.name}`;
+tname.textContent=`Yadav`
+suffix.textContent=`Jigyasa`
+
 const about_me=document.querySelector("#about_me");
 
-about_me.textContent=`Currently learning to build dynamic and responsive web applications.I enjoy working with Web development technologies.
-I'm passionate about solving problems through code and
- continuously improving my skills by working on personal 
- projects and exploring new tools and frameworks.`
+
 
 
 const texts = ["Android Developer ", "Web Developer ", "Creative Coder ","Mern Stack developer "];

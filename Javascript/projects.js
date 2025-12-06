@@ -13,49 +13,64 @@ const projects={
     };
   
 
-    window.addEventListener('load', function () {
+    window.addEventListener('load', async function () {
 
       const preloader = document.getElementById('preloader');
       preloader.style.display = 'none';
-    
-        
-    
-    
-    });
-    
-const wrapper = document.querySelector(".wrapper");
-
-projects.item.forEach(user => {
+try{
+const response=await axios.get("http://localhost:5000/api/response/projects");
+console.log(response.data.project);
+response.data.project.forEach(pr => {
 
     // 1. Insert project card
     wrapper.innerHTML += `
         <div class="my_projects">
             <div id="imageCountainer">
-                <img src="${user.img}" id="projectImage" alt="">
+                <img src="${pr.image}" id="projectImage" alt="">
             </div>
 
             <div class="about_project">
-                <h1>${user.name}</h1>
-                <p id="project_details">${user.about}</p>
+                <h1>${pr.name}</h1>
+                <p id="project_details">${pr.about}</p>
 
                 <div class="tech-used"></div>
             </div>
 
-            <a href="${user.link}" id="viewButton">View project</a>
+            <a href="${pr.url}" id="viewButton">View project</a>
         </div>`;
 });
-
-
-// 2. Now add tech tags to each project card
 const projectCards = document.querySelectorAll(".my_projects");
 
 projectCards.forEach((card, index) => {
     const techContainer = card.querySelector(".tech-used");
 
-    projects.item[index].tech.forEach(tech => {
+    response.data.project[index].techs.forEach(tech => {
         techContainer.innerHTML += `<span class="tag">${tech}</span>`;
     });
 });
+
+
+
+}
+catch(error){
+  console.log("error in message",error.message);
+}
+
+
+
+
+
+
+      
+    
+    });
+    
+const wrapper = document.querySelector(".wrapper");
+
+
+
+
+// 2. Now add tech tags to each project card
 
 
 
