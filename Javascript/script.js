@@ -21,7 +21,7 @@ const image=document.querySelector(".image_section");
 const response=await axios.get("https://admin-server-2.onrender.com/api/response/details");
 
 const [name1,name2]=response.data.user.name.split(" ");
- user_name.textContent=:+name1;
+ user_name.textContent=name1;
  suffix.textContent=`<${name1}>`;
  tname.textContent=`</${name2}>`;
 
@@ -115,4 +115,5 @@ let isDisplay=false;
       
     }
   })
+
 
