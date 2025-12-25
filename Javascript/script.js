@@ -28,7 +28,7 @@ const [name1,name2]=response.data.user.name.split(" ");
 
  about_me.textContent=response.data.user.about;
 image.src=response.data.user.image;
-resumeLink.href=response.data.user.resume;
+resumeLink.href='https://drive.google.com/uc?export=download&id=1XA_KArpvDSOZ5kCsgW5EDImGxC8TRt9d';
 
 
  console.log(response.data.user);
@@ -115,5 +115,6 @@ let isDisplay=false;
       
     }
   })
+
 
 
