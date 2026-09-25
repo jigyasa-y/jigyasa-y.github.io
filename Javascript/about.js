@@ -1,6 +1,10 @@
 const jigyasa={
     name:'Jigyasa Yadav',
-about:'Hello! I’m Jigyasa Yadav from Nepal, currently pursuing a B.Tech in Information Technology. I’m passionate about exploring the intersection of technology and creativity, with a growing interest in software development, web technologies, and artificial intelligence. '
+about:'Backend Developer | Node.js | Express.js | TypeScript | REST APIs
+
+Backend Developer with 6 months of onsite industry experience at Enyard Private Limited, focused on designing and developing backend services, RESTful APIs, database-driven applications, and application-level business logic.
+
+Hands-on experience across API development, database integration, authentication and authorization, validation, user and role management, permissions, API integration, debugging, testing, and multi-tenant application functionality. Contributed to real-world projects including TimeX, Database Visualization, and XPos, with practical experience in developing and maintaining backend functionality. '
 };
 
 window.addEventListener('load', function () {
