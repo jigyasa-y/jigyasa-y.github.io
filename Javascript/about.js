@@ -4,7 +4,8 @@ about:'Backend Developer | Node.js | Express.js | TypeScript | REST APIs
 
 Backend Developer with 6 months of onsite industry experience at Enyard Private Limited, focused on designing and developing backend services, RESTful APIs, database-driven applications, and application-level business logic.
 
-Hands-on experience across API development, database integration, authentication and authorization, validation, user and role management, permissions, API integration, debugging, testing, and multi-tenant application functionality. Contributed to real-world projects including TimeX, Database Visualization, and XPos, with practical experience in developing and maintaining backend functionality. '
+Hands-on experience across API development, database integration, authentication and authorization, validation, user and role management, permissions, API integration, debugging, testing, and multi-tenant application functionality. Contributed to real-world projects including TimeX, Database Visualization, and XPos, with practical 
+    experience in developing and maintaining backend functionality.' 
 };
 
 window.addEventListener('load', function () {
